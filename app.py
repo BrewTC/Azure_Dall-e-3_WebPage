@@ -9,10 +9,14 @@ import base64
 load_dotenv()
 
 # === 從 .env 讀取必要參數 ===
-endpoint = os.getenv("OPENAI_API_BASE")
-api_key = os.getenv("OPENAI_API_KEY")
-api_version = os.getenv("OPENAI_API_VERSION", "2024-02-01")
-dalle_deployment = os.getenv("DALLE_DEPLOYMENT_NAME", "dall-e-3")
+api_key = st.secrets["AZURE_OPENAI_API_KEY"]
+endpoint = st.secrets["AZURE_OPENAI_API_ENDPOINT"]
+api_version = st.secrets["AZURE_OPENAI_API_VERSION"]
+dalle_deployment = st.secrets["AZURE_OPENAI_DEPLOYMENT_NAME"]
+# endpoint = os.getenv("OPENAI_API_BASE")
+# api_key = os.getenv("OPENAI_API_KEY")
+# api_version = os.getenv("OPENAI_API_VERSION", "2024-02-01")
+# dalle_deployment = os.getenv("DALLE_DEPLOYMENT_NAME", "dall-e-3")
 
 # 建立 Azure OpenAI 客戶端
 client = AzureOpenAI(
