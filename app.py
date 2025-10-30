@@ -13,6 +13,7 @@ api_key = st.secrets["AZURE_OPENAI_API_KEY"]
 endpoint = st.secrets["AZURE_OPENAI_API_ENDPOINT"]
 api_version = st.secrets["AZURE_OPENAI_API_VERSION"]
 dalle_deployment = st.secrets["AZURE_OPENAI_DEPLOYMENT_NAME"]
+
 # endpoint = os.getenv("OPENAI_API_BASE")
 # api_key = os.getenv("OPENAI_API_KEY")
 # api_version = os.getenv("OPENAI_API_VERSION", "2024-02-01")
@@ -51,14 +52,14 @@ def generate_image(prompt):
         return None
 
 # === Streamlit UI ===
-st.set_page_config(page_title="臺大醫院雲林分院圖片生成器", page_icon="🚀", layout="wide")
+st.set_page_config(page_title="Dall-e-3 圖片生成器", page_icon="🚀", layout="wide")
 
 # 標題
 # st.title("🚀 臺大醫院雲林分院圖片生成器")
 st.markdown(
     """
     <h1 style='text-align: center; font-size: 2.5em; line-height: 1.2; word-break: break-word;'>
-        臺大醫院雲林分院圖片生成器
+        Dall-e-3 圖片生成器
     </h1>
     """,
     unsafe_allow_html=True
