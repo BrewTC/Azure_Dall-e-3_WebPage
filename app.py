@@ -55,7 +55,7 @@ def generate_image(prompt):
 st.set_page_config(page_title="Dall-e-3 圖片生成器", page_icon="🚀", layout="wide")
 
 # 標題
-# st.title("🚀 臺大醫院雲林分院圖片生成器")
+# st.title("🚀 Dall-e-3 圖片生成器")
 st.markdown(
     """
     <h1 style='text-align: center; font-size: 2.5em; line-height: 1.2; word-break: break-word;'>
