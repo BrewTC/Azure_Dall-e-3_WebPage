@@ -1,5 +1,5 @@
 # Azure_Dall-e-3-WebPage
-## 臺大醫院雲林分院圖片生成器
+## Dall-e-3 圖片生成器
 ![](/img/123.jpg)
 這是一個使用 [Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/) 與 [DALL·E 3 模型](https://openai.com/dall-e) 所建立的圖片生成器，前端介面採用 [Streamlit](https://streamlit.io/) 開發，使用者可以輸入文字提示詞（Prompt），並生成高品質的圖片。
 
